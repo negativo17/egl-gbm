@@ -1,12 +1,12 @@
 %global commit0 e5eee6058a812bce6df792c54efc484c4f15b6d1
 %global date 20230420
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-#global tag %{version}
+%global tag %{version}
 
 Name:           egl-gbm
 Epoch:          1
-Version:        1.1.0
-Release:        4%{!?tag:.%{date}git%{shortcommit0}}%{?dist}
+Version:        1.1.1
+Release:        1%{!?tag:.%{date}git%{shortcommit0}}%{?dist}
 Summary:        The GBM EGL external platform library
 License:        MIT
 URL:            https://github.com/NVIDIA/%{name}
@@ -48,6 +48,9 @@ rm %{buildroot}%{_libdir}/libnvidia-egl-gbm.so
 %{_libdir}/libnvidia-egl-gbm.so.1*
 
 %changelog
+* Wed Mar 06 2024 Simone Caronni <negativo17@gmail.com> - 1:1.1.1-1
+- Update to final 1.1.1.
+
 * Thu Sep 28 2023 Simone Caronni <negativo17@gmail.com> - 1:1.1.0-4.20230420gite5eee60
 - Bump epoch.
 
