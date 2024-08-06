@@ -48,7 +48,7 @@ rm %{buildroot}%{_libdir}/libnvidia-egl-gbm.so
 %{_libdir}/libnvidia-egl-gbm.so.1*
 
 %changelog
-* Tue Aug 06 2024 Simone Caronni <negativo17@gmail.com> - 1:1.1.1-5.20240412git649c079
+* Tue Aug 06 2024 Simone Caronni <negativo17@gmail.com> - 2:1.1.1-5.20240412git649c079
 - Bump.
 
 * Wed May 29 2024 Simone Caronni <negativo17@gmail.com> - 1:1.1.1-2.20240412git649c079
