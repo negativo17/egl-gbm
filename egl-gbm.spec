@@ -5,7 +5,7 @@
 
 Name:           egl-gbm
 Epoch:          2
-Version:        1.1.2.1%{!?tag:^%{date}git%{shortcommit0}}
+Version:        1.1.3%{!?tag:^%{date}git%{shortcommit0}}
 Release:        1%{?dist}
 Summary:        Nvidia egl gbm libary
 License:        MIT
@@ -49,6 +49,9 @@ rm %{buildroot}%{_libdir}/libnvidia-egl-gbm.so
 %{_datadir}/egl/egl_external_platform.d/15_nvidia_gbm.json
 
 %changelog
+* Thu Jan 15 2026 Simone Caronni <negativo17@gmail.com> - 2:1.1.3-1
+- Update to 1.1.3.
+
 * Thu Mar 27 2025 Simone Caronni <negativo17@gmail.com> - 2:1.1.2.1-1
 - Update to 1.1.2.1.
 - Trim changelog.
